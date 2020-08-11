@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href="{% static 'style2.css' %}" type="text/css">
+    <link rel="icon" href="../static/currencies2.jpg">
+</head>
+<body id="bg">
+<p><h1>You shall get the comparison of the base with current values of other currencies.</h1></p>
+<p><h1>--------------- Rates in {{x2}} ---------------</h1></p>
+{% for item,value in ratez.items %}
+<h3>{{item}} :{{value}}</h3>
+{% endfor %}
+</body>
+</html>
