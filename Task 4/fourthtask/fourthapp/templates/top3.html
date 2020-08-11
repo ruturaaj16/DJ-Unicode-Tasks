@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 most searched currencies.</title>
+</head>
+<body><em><strong><h1>
+    <p>These are the top three searched currencies.</p>
+    {% for elem in str2 %}
+    <p>{{elem}}:{{elem.counts}}</p>
+    {% endfor %}
+</h1></strong></em></body>
+</html>

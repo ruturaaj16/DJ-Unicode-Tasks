@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Currency Conversion API Project</title>	
+	<link rel = "stylesheet" href="{% static 'style.css' %}" type="text/css">
+	<link rel="icon" href="../static/currencies2.jpg">
+</head>
+<body id="bg">
+	<p>First let me introduce you to this project.<br>I have accessed the foreign currency exchange API so that the user can choose a base currency and then see the par values of other countries' currencies with the base currency chosen. The API "Exchange rates API" is a free service for current and historical foreign exchange rates published by the European Central Bank.</p>
+	<p id="para">Here is a list of the currencies which we can interconvert:<br>
+		"AUD" refers to the Australian Dollar($).<br>
+		"BGN" refers to the Bulgarian Lev(лв).<br>
+		"BRL" refers to the Brazilian Real(R$).<br>
+		"CAD" refers to the Canadian Dollar($).<br>
+		"CHF" refers to the Swiss Franc(Fr.).<br>
+		"CNY" refers to the Chinese Yuan(元/¥).<br>
+		"CZK" refers to the Czech Koruna(Kč).<br>
+		"DKK" refers to the Danish Krone(kr).<br>
+		"EUR" refers to the Euro(€)<br>
+		"GBP" refers to the Pound Sterling(£).<br>
+		"HKD" refers to the Hong Kong Dollar($).<br>
+		"HRK" refers to the Croatian Kuna(kn).<br>
+		"HUF" refers to the Hungarian Forint(Ft).<br>
+		"IDR" refers to the Indonesian Rupiah(Rp).<br>
+		"ILS" refers to the New Israeli Sheqel(₪).<br>
+		"INR" refers to the Indian Rupee(₹).<br>
+		"JPY" refers to the Japanese Yen(¥).<br>
+		"KRW" refers to the South Korean Won(₩).<br>
+		"MXN" refers to the Mexican Peso($).<br>
+		"MYR" refers to the Malaysian Ringgit(RM).<br>
+		"NOK" refers to the Norwegian Krone(kr).<br>
+		"NZD" refers to the New Zealand Dollar($).<br>
+		"PHP" refers to the Philippine Peso(₱).<br>
+		"PLN" refers to the Polish Zloty(zł).<br>
+		"RON" refers to the Romanian Leu(lei).<br>
+		"RUB" refers to the Russian Ruble(₽).<br>
+		"SEK" refers to the Swedish Krona(kr).<br>
+		"SGD" refers to the Singapore Dollar($).<br>
+		"THB" refers to the Thai Baht(฿).<br>
+		"TRY" refers to the Turkish Lira(₺).<br>
+		"USD" refers to the American Dollar($).<br>
+		"ZAR" refers to the South African Rand(R).<br>
+	</p>
+	<p>Form for task 3</p>
+	<form action="{% url 'home' %}" method="get"> 
+		<label for="base" id="basec">Base currency:</label><br>
+ 		<input type="text" id="base" name="base"><br>
+		<input type="submit" value="Submit" id="submit">
+	  </form>
+	  <p>Form for task 4</p>
+	<form action="{% url 'result' %}" method="get">
+		<label for="base" id="basec">Base currency:</label><br>
+ 		<input type="text" id="base" name="base"><br>
+		<input type="submit" value="Submit" id="submit">
+  	</form>
+</body>
+</html>
